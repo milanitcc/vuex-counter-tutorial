@@ -5,18 +5,28 @@
             <p
                 v-for="(number, index) in history"
                 :key="index"
+                :class="activeIndexes(parseFloat(value)).includes(index) && 'bold'"
             >
                 {{ number }}
             </p>
         </div>
+        <input placeholder="Search by index"
+        type="number"
+        v-model="value" />
     </div>
 </template>
 
 <script>
-import { mapState } from 'vuex'
+import { mapGetters, mapState } from 'vuex'
 export default {
+    data() {
+        return {
+            value: 0
+        }
+    },
     computed: {
-        ...mapState(["history"])
+        ...mapState(["history"]),
+        ...mapGetters(["activeIndexes"])
     }
 }
 </script>
@@ -36,5 +46,9 @@ export default {
 
     .flex p {
         margin: 1rem;
+    }
+
+    .bold {
+        font-weight: 900;
     }
 </style>
