@@ -1,4 +1,4 @@
-<img src="./src/assets/screencapture.png" style="display: block; margin-left: auto; margin-right: auto; width: 50%;"/>
+<img src="./src/assets/screencapture.png" style="display: block; margin-left: auto; margin-right: auto;"/>
 
 # vue-with-vuex
 
