@@ -23,4 +23,4 @@ npm run lint
 ```
 
 ### Reference From
-See [Configuration Reference](https://www.youtube.com/watch?v=y7DQhNs9Azw&ab_channel=LaithHarb).
+See [Reference](https://www.youtube.com/watch?v=y7DQhNs9Azw&ab_channel=LaithHarb).
