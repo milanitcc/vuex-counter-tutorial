@@ -6,16 +6,19 @@ import axios from 'axios';
 const store = createStore({
     state() {
         return {
-            counter: 0
+            counter: 0,
+            history: [0]
         }
     },
     mutations: {
         addToCounter(state, payload) {
             state.counter += payload
+            state.history.push(state.counter)
         },
 
         substractToCounter(state, payload) {
             state.counter -= payload
+            state.history.push(state.counter)
         }
     },
     actions: {
